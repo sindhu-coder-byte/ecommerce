@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Topbar -->
+  <div class="topbar">
+    
+   <div class="top-left">
+    <div class="contact-item">
+      <img src="images/Vector 1.png" width="16" alt="Call">
+      <span>+91 87642 987687</span>
+    </div>
+    <div class="contact-item">
+      <img src="images/Vector V.png" width="16" alt="WhatsApp">
+      <span>+91 87642 987687</span>
+    </div>
+  </div>
+
+  <!-- Center: Welcome Text -->
+  <div class="top-center">
+    <span>World fastest Online Shopping Destination</span>
+  </div>
+
+  <!-- Right: Location, Account, Login -->
+  <div class="top-right">
+    <div class="dropdown">location
+      <img src="images/Vector.png" width="12" alt="Location">
+      
+    </div>
+    <div class="dropdown">Account
+      <img src="images/Vector.png" width="12" alt="Account">
+    
+    </div>
+    <div class="dropdown">Login/logout
+      <img src="images/SVG.png" width="18" alt="Login">
+     
+    </div>
+  </div>
+</div>
+
+  <!-- Fixed Header -->
+  <header class="navbar fixed">
+    <div class="logo">
+      <img src="images/Ellipse 1.png" alt="Logo" />
+      <h2>Grocery Hub</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="deals.html">Deals</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <img src="images/SEARCH.png" width="20">
+      <a href="cart.html" class="cart-icon">
+      <img src="images/Vector 8.png" alt="cart" width="20">
+     <span id="cart-count" style="background:red; color:white; border-radius:50%; padding:2px 8px; font-size:12px;">0</span>
+      </a>
+      <img src="images/Vector O.png" width="20">
+    </div>
+  </header>
+
+  <!-- Cart Section -->
+   <div class="cart-box">
+    <div class="cart-header" id="cart-header">My Cart</div>
+
+    <div class="cart-items-container">
+      <!-- Left side: cart products -->
+      <div class="cart-left" id="cart-items">
+    
+      </div>
+
+      <!-- Right side: bill summary -->
+      <div class="cart-right">
+        <h4>Bill Details</h4>
+        <div class="bill-summary">
+          <p><span>Total Qty (<span id="total-qty">0</span>)</span><span>₹<span id="sub-total">0</span></span></p>
+          <p><span>Handling Fee</span><span>₹<span id="handling-fee">10</span></span></p>
+          <hr />
+          <p><strong>To Pay</strong><strong>₹<span id="grand-total">0</span></strong></p>
+        </div>
+        <a href="Checkout.html"><button class="buy-btn">Buy Now</button></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>

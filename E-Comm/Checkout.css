@@ -1,0 +1,96 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f8f8f8;
+  padding: 30px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #8BC34A;
+}
+
+.checkout-box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 30px auto;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Left - Product List */
+.product-list {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-card img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card-details {
+  flex-grow: 1;
+}
+
+.product-card-details h4 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.product-card-details p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Right - Payment */
+.payment-section {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.total-cost {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.payment-options label {
+  display: block;
+  margin: 8px 0;
+}
+
+.pay-btn {
+  background-color: #8BC34A;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.pay-btn:hover {
+  background-color: #6fae39;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="Checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <h1> Checkout</h1>
+
+  <div class="checkout-box">
+    <!-- Product List -->
+    <div class="product-list" id="checkout-items"></div>
+
+    <!-- Payment Section -->
+    <div class="payment-section">
+      <div class="total-cost" id="total-checkout">Total: ₹0.00</div>
+
+      <div class="payment-options">
+        <strong>Payment Options:</strong><br>
+        <label><input type="radio" name="payment" checked> UPI / Google Pay</label><br>
+        <label><input type="radio" name="payment"> Debit / Credit Card</label><br>
+        <label><input type="radio" name="payment"> Cash on Delivery</label>
+      </div>
+
+      <button class="pay-btn" onclick="confirmOrder()">Pay & Confirm</button>
+    </div>
+  </div>
+  <script src="checkout.js"></script>
+</body>
+</html>

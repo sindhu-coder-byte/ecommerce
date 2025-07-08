@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #FFFFFF;
+  color: #595959;
+  transition: background 0.3s, color 0.3s;
+}
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+      background: #fff;
+      max-width: 1200px;
+      margin: 2rem auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .left, .right {
+      display: flex;
+      flex-direction: column;
+    }
+    .left h1 {
+      font-size: 24px;
+      color: #333;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: #444;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    .right img {
+      max-width: 35%;
+      border-radius: 10px;
+    }
+    .price, .quantity, .stock {
+      margin-top: 1rem;
+      font-size: 16px;
+      color: #333;
+    }
+    .actions {
+      margin-top: 1rem;
+    }
+    .actions button {
+      padding: 0.7rem 1.5rem;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+    .add-btn {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+    .buy-btn {
+      background-color: #8BC34A;
+      color: white;
+    }
+    .quantity-input {
+      width: 60px;
+      margin-left: 10px;
+    }
+    @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+    .right img{
+        max-width: 100%;
+    }
+}
